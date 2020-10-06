@@ -3,7 +3,7 @@ jobs:
   main:
     runs-on: ubuntu-latest
     steps:
-    - id: foo
-      uses: weibeld/test-action@v1.1.11
-    - name: print-random-number
-      run: echo "random-number ${{ steps.foo.outputs.random-number }}"
+    - name: install-yq
+      uses: weibeld/install-yq@master
+    - name: validate-yq-installation
+      run: yq --version
