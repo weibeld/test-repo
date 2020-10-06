@@ -3,7 +3,6 @@ jobs:
   main:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
     - id: foo
       uses: weibeld/test-action@v1
       with:
