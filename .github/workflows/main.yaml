@@ -5,7 +5,7 @@ jobs:
     runs-on: macos-latest
     steps:
     - name: install-yq
-      uses: weibeld/install-yq@9d23079ef28fcf59eb278acf18de5254c978ab92
+      uses: weibeld/install-yq@macos
       with:
         version: 3.3.0
     - name: validate-yq-installation
