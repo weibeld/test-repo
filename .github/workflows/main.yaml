@@ -2,7 +2,7 @@ on: push
 name: main
 jobs:
   main:
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
     steps:
     - name: install-yq
       uses: weibeld/install-yq@2e56fe9bd94e6e6abbbd71ef17c18de131ae0b94
