@@ -6,4 +6,4 @@ jobs:
     - id: foo
       uses: weibeld/test-action@v1
     - name: print-random-number
-    - run: echo "random-number ${{ steps.foo.outputs.random-number }}"
+      run: echo "random-number ${{ steps.foo.outputs.random-number }}"
