@@ -4,6 +4,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - id: foo
-      uses: weibeld/test-action@v1.1.1
+      uses: weibeld/test-action@v1.1.2
     - name: print-random-number
       run: echo "random-number ${{ steps.foo.outputs.random-number }}"
