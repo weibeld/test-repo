@@ -4,7 +4,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - id: foo
-      uses: weibeld/test-action@v1.1.6
+      uses: weibeld/test-action@v1.1.7
       with:
         who-to-greet: Daniel
     - name: print-random-number
