@@ -2,11 +2,9 @@ on: push
 name: main
 jobs:
   main:
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
     steps:
     - name: install-yq
-      uses: weibeld/install-yq@master
-      with:
-        version: 3.3.0
+      uses: weibeld/install-yq@v1
     - name: validate-yq-installation
       run: yq --version
