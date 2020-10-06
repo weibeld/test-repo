@@ -6,7 +6,5 @@ jobs:
     steps:
     - name: install-yq
       uses: weibeld/install-yq@77f7cae0ef17c3cdeb425f0d9d75072e715ca1d7
-      with:
-        version: 3.3.0
     - name: validate-yq-installation
       run: yq --version
