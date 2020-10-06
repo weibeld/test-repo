@@ -2,9 +2,9 @@ on: push
 name: main
 jobs:
   main:
-    runs-on: macos-latest
+    runs-on: windows-latest
     steps:
     - name: install-yq
-      uses: weibeld/install-yq@77f7cae0ef17c3cdeb425f0d9d75072e715ca1d7
+      uses: weibeld/install-yq@e26b898db11199591a8347d2136b7fec6fb5c0f6
     - name: validate-yq-installation
       run: yq --version
