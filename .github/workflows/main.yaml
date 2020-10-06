@@ -5,7 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: install-yq
-      uses: weibeld/install-yq@fff23dcccd908cc4defc3759d84320f41eb52dbd
+      uses: weibeld/install-yq@77f7cae0ef17c3cdeb425f0d9d75072e715ca1d7
       with:
         version: 3.3.0
     - name: validate-yq-installation
