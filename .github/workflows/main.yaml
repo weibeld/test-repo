@@ -1,0 +1,11 @@
+on: push
+jobs:
+  main:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - id: foo
+      uses: weibeld/test-action@v1
+      with:
+        who-to-greet: Daniel
+    - run: echo "random-number ${{ steps.foo.outputs.random-number }}"
