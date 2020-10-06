@@ -5,6 +5,5 @@ jobs:
     steps:
     - id: foo
       uses: weibeld/test-action@v1
-      with:
-        who-to-greet: Daniel
+    - name: print-random-number
     - run: echo "random-number ${{ steps.foo.outputs.random-number }}"
