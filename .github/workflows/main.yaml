@@ -5,7 +5,7 @@ jobs:
     runs-on: windows-latest
     steps:
     - name: install-yq
-      uses: weibeld/install-yq@5851dc542c04e138e3a97c30cc4fbbb2d35cdd2b
+      uses: weibeld/install-yq@408c3dbdc4daa7eeb6805a97b032d662d30d60db
       with:
         version: 3.3.0
     - name: validate-yq-installation
