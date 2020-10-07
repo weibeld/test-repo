@@ -10,3 +10,5 @@ jobs:
         who-to-greet: Daniel
     - name: verify-ajv-cli
       run: ajv help
+    - name: env
+      run: env
