@@ -4,7 +4,9 @@ jobs:
   main:
     runs-on: ubuntu-latest
     steps:
-    - name: install-ajv-cli
-      uses: weibeld/install-ajv-cli@1c1d7f11cacc03072573b651ea10c39c49662e86
-    - name: validate-ajv-cli
-      run: ajv help
+    - id: test-js-action
+      uses: weibeld/test-js-action@master
+      with:
+        who-to-greet: Daniel
+    - name: get-output
+      run: echo "The time was ${{ steps.test-js-action.outputs.time }}"
