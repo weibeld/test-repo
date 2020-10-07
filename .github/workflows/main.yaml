@@ -5,6 +5,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: install-ajv-cli
-      uses: weibeld/install-ajv-cli@314a32dedc72d5ad11285f546b80ecfa04bc576d
+      uses: weibeld/install-ajv-cli@1c1d7f11cacc03072573b651ea10c39c49662e86
     - name: validate-ajv-cli
       run: ajv help
