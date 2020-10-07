@@ -8,5 +8,5 @@ jobs:
       uses: weibeld/test-js-action@master
       with:
         who-to-greet: Daniel
-    - name: get-output
-      run: echo "The time was ${{ steps.test-js-action.outputs.time }}"
+    - name: verify-ajv-cli
+      run: ajv help
