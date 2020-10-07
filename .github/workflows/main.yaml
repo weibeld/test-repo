@@ -5,7 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - id: test-js-action
-      uses: weibeld/test-js-action@master
+      uses: weibeld/test-js-action@8806ca5fc476d57f3d88a25dc83e4852cdcd9c14
       with:
         who-to-greet: Daniel
     - name: verify-ajv-cli
