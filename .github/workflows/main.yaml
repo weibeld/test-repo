@@ -4,9 +4,7 @@ jobs:
   main:
     runs-on: ubuntu-latest
     steps:
-    - name: install-yq
-      uses: weibeld/install-yq@bdd85c9e1b5273d9024a790f8f80045921424829
-      with:
-        version: 3.3.10
-    - name: validate-yq-installation
-      run: yq --version
+    - name: install-ajv-cli
+      uses: weibeld/install-ajv-cli@debug
+    - name: validate-ajv-cli
+      run: ajv help
