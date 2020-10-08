@@ -4,11 +4,6 @@ jobs:
   main:
     runs-on: ubuntu-latest
     steps:
-    - id: test-js-action
-      uses: weibeld/test-js-action@1723349c476a37c9534f2162dc47f0a15177b7b4
-      with:
-        who-to-greet: Daniel
+    - uses: weibeld/install-ajv-cli@dev
     - name: verify-ajv-cli
       run: ajv help
-    - name: env
-      run: env
