@@ -2,7 +2,7 @@ on: push
 name: main
 jobs:
   main:
-    runs-on: macos-latest
+    runs-on: windows-latest
     steps:
     - uses: weibeld/install-ajv-cli@dev
       with:
