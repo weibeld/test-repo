@@ -2,10 +2,10 @@ on: push
 name: main
 jobs:
   main:
-    runs-on: ubuntu-latest
+    runs-on: macos-latest
     steps:
     - uses: weibeld/install-ajv-cli@dev
       with:
-        version: 5.0.0
+        version: 3.4.0 
     - name: verify-ajv-cli
       run: ajv help
