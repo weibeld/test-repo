@@ -6,6 +6,6 @@ jobs:
     steps:
     - uses: weibeld/install-ajv-cli@dev
       with:
-        version: 1.0.0
+        version: 2.0.0
     - name: verify-ajv-cli
       run: ajv help
