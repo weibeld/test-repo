@@ -2,13 +2,7 @@ on: push
 name: main
 jobs:
   main:
-    runs-on: ubuntu-latest
+    runs-on: macos-latest
     steps:
     - uses: weibeld/install-yq@dev
       id: install-yq
-    - name: print-all-outputs
-      run: echo "${{ toJson(steps.install-yq.outputs) }}"
-    - name: print-util-output
-      run: echo "${{ steps.install-yq.outputs.util }}"
-    - run: yq --version
-    - run: env | sort
