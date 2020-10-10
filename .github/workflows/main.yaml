@@ -2,10 +2,8 @@ on: push
 name: main
 jobs:
   main:
-    runs-on: ubuntu-latest
+    runs-on: macos-latest
     steps:
     - uses: weibeld/install-yq@dev
-      with:
-        binary: yq_linux_arm64
     - run: yq --version
     - run: env | sort
