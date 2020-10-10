@@ -6,7 +6,5 @@ jobs:
     steps:
     - name: access-github-api
       run: |
-        while true; do
-          curl -s "$GITHUB_API_URL"/repos/mikefarah/yq/releases/latest | jq -r .tag_name
-        done
+        curl -s "$GITHUB_API_URL"/repos/mikefarah/yq/releases/latest
         #curl -s -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" "$GITHUB_API_URL"/repos/mikefarah/yq/releases/latest | jq -r .tag_name
