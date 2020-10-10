@@ -1,8 +1,15 @@
 on: push
 name: main
 jobs:
-  main:
+  ubuntu:
     runs-on: ubuntu-latest
+    steps:
+    - uses: weibeld/install-yq@dev
+      id: install-yq
+      with:
+        version: 3.3.0
+  macos:
+    runs-on: macos-latest
     steps:
     - uses: weibeld/install-yq@dev
       id: install-yq
