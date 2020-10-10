@@ -6,6 +6,6 @@ jobs:
     steps:
     - uses: weibeld/install-yq@dev
       id: install-yq
-    - run: echo "${{ toJson(steps.install-yq.outputs) }}"
+    - run: echo "${{ steps.install-yq.outputs.commons }}"
     - run: yq --version
     - run: env | sort
