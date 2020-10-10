@@ -2,7 +2,7 @@ on: push
 name: main
 jobs:
   main:
-    runs-on: ubuntu-latest
+    runs-on: macos-latest
     steps:
     - uses: weibeld/install-yq@dev
       id: install-yq
