@@ -6,6 +6,5 @@ jobs:
     steps:
     - uses: weibeld/install-yq@dev
       with:
-        binary: yq_linux_arm64
-        version: 5.0.0
+        binary: yq_linux_foo
     - run: yq --version
