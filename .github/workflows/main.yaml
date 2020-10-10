@@ -8,6 +8,7 @@ jobs:
       id: install-yq
       with:
         version: 3.3.0
+        github-token: ${{ github.token }}
   macos:
     runs-on: macos-latest
     steps:
@@ -15,3 +16,4 @@ jobs:
       id: install-yq
       with:
         version: 3.3.0
+        github-token: ${{ github.token }}
