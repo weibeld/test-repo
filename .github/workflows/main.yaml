@@ -5,4 +5,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: weibeld/install-yq@dev
+      with:
+        binary: yq_linux_arm64
     - run: yq --version
